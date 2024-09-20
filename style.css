@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.62),
+      rgba(0, 0, 0, 0.32),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?cs=srgb&dl=pexels-bess-hamiti-83687-36487.jpg&fm=jpg")
+      center/cover;
+  z-index: -1;
+  filter: blur(2px);
+}
+
+.login {
+  background-color: #000000;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  opacity: 50%;
+  justify-content: center;
+  border-radius: 10px;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#email,
+#password {
+  color: #ffffff;
+  width: 250px;
+  height: 30px;
+  margin: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  transition: 0.5s;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: #000;
+  color: white;
+  border: solid 2px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+input::placeholder {
+  margin-bottom: 500px;
+}
+input::placeholder:focus {
+  margin-top: 50px;
+}
+
+#email:focus {
+  outline: 0;
+  border-bottom-color: rgb(75, 16, 211);
+}
+#password:focus {
+  outline: 0;
+  border-bottom-color: rgb(75, 16, 211);
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+#email:focus,
+#password:focus {
+  outline: none;
+  border-bottom-color: rgb(75, 16, 211); 
+}
+
+.error-input {
+  border-bottom-color: red;
+}
+
+.suggest {
+    width: 200px;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ff0000;
+    color: #fff;
+    position: absolute;
+    left: -180px;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+.suggest:hover {
+    left: 0;
+}
+
