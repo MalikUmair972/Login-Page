@@ -8,7 +8,12 @@ button.addEventListener('click', () => {
     const email = emailInput.value;
     const password = passwordInput.value;
 
-    if (email === 'malikumair972' && password === 'abc123') {
+    if(!email.includes('@gmail.com')) {
+        alert('Please add a valid @gmail.com email');
+        return;
+    }
+
+    if (email === 'malikumair972@gmail.com' && password === 'abcd1234') {
        
         window.location.href='https://github.com/MalikUmair972';
     }  else {
@@ -17,6 +22,10 @@ button.addEventListener('click', () => {
         passwordInput.style.borderBlockColor = 'red'
         emailInput.style.borderBlockColor = 'red'
     }
+    if (password.length < 8) {
+        alert('Password must be at least 8 characters long');
+    } 
+
 });
 
 

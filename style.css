@@ -115,13 +115,13 @@ input::placeholder:focus {
 }
 
 .suggest {
-    width: 200px;
+    width: 300px;
     height: 80px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ff0000;
     color: #fff;
     position: absolute;
-    left: -180px;
+    left: -280px;
     border-radius: 20px;
     transition: 0.5s;
     text-align: center;
